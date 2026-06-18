@@ -76,44 +76,6 @@ h1 {
   margin: 0;
 }
 
-/* ---- the stamp / seal — the single signature element on each page ---- */
-.stamp {
-  position: absolute;
-  top: -6px;
-  right: 0;
-  width: 84px;
-  height: 84px;
-  border: 2px solid var(--stamp);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transform: rotate(-9deg);
-  color: var(--stamp);
-  opacity: 0.85;
-}
-
-.stamp::before {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border: 1px dashed var(--stamp);
-  border-radius: 50%;
-}
-
-.stamp span {
-  font-size: 10px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1.4;
-}
-
-.stamp .stamp-letter {
-  font-size: 30px;
-  line-height: 1;
-  letter-spacing: 0;
-}
 
 @media (max-width: 480px) {
   .stamp {
