@@ -77,14 +77,6 @@ h1 {
 }
 
 
-@media (max-width: 480px) {
-  .stamp {
-    position: static;
-    margin: 0 auto 20px;
-    transform: rotate(-6deg);
-  }
-}
-
 .manifesto {
   font-style: italic;
   color: var(--ink-soft);
@@ -107,7 +99,6 @@ h2 {
 
 h2 .num {
   color: var(--stamp);
-  font-style: italic;
   font-size: 15px;
 }
 
