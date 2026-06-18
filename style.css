@@ -1,0 +1,181 @@
+/* ===== BIASER — shared styles for Privacy Policy & About ===== */
+
+:root {
+  --bg: #e0e0da;       /* paper background */
+  --ink: #2a2a28;       /* main text */
+  --ink-soft: #6a6a64;  /* muted / caption text */
+  --stamp: #ae423c;     /* rubber-stamp red — the one accent we spend */
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  font-family: 'Adamina', Georgia, serif;
+  line-height: 1.7;
+  font-size: 16px;
+  position: relative;
+}
+
+/* ---- repeating paper texture, tiled (not stretched), laid over EVERYTHING ----
+   Change the url() below once you drop your texture file in. Tweak opacity
+   to taste — higher = grain more visible, lower = more subtle. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('natural.png');
+  background-repeat: repeat;
+  background-position: 0 0;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 28px 96px;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 14px 0;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ---- the stamp / seal — the single signature element on each page ---- */
+.stamp {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 84px;
+  height: 84px;
+  border: 2px solid var(--stamp);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(-9deg);
+  color: var(--stamp);
+  opacity: 0.85;
+}
+
+.stamp::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed var(--stamp);
+  border-radius: 50%;
+}
+
+.stamp span {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.stamp .stamp-letter {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@media (max-width: 480px) {
+  .stamp {
+    position: static;
+    margin: 0 auto 20px;
+    transform: rotate(-6deg);
+  }
+}
+
+.manifesto {
+  font-style: italic;
+  color: var(--ink-soft);
+  text-align: center;
+  border-left: 2px solid var(--ink);
+  padding-left: 16px;
+  margin: 34px 0 44px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 44px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+h2 .num {
+  color: var(--stamp);
+  font-style: italic;
+  font-size: 15px;
+}
+
+p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 4px;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.contact-email {
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.ornament {
+  text-align: center;
+  font-size: 22px;
+  color: var(--ink-soft);
+  margin: 56px 0 8px;
+}
+
+.colophon {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 0;
+}
