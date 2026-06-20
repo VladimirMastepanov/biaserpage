@@ -1,0 +1,32 @@
+biaser
+
+about
+
+biaser generates ambient music. The idea is inspired by generative music: music that assembles itself, without a composer deciding in the moment what plays next.
+
+Inside biaser, the music is built from many short looping fragments of sound (layers) that play at the same time, overlapping like layers in a sound collage. They never play in sync and keep slightly drifting against each other. That's where the name comes from: biaser comes from the English word bias, "a shift." The app literally does what it promises: it shifts. And because of this constant shift, the moment playing right now exists only right now and will never happen again.
+
+You choose one of five moods, shown as a color rather than a word. Which combination of sounds belongs to which color was my own decision, a fairly loose and subjective one: this combination felt red to me, that one felt blue. You might feel differently. This is, perhaps, the only place in biaser where my hand shows: a small island of order in a flow of randomness. Everything after that the app decides on its own. You have almost no control, and that's the point.
+
+There's no "play the same thing again" here. Every time you open biaser is a one time event that disappears with the session: nothing is saved, nothing is remembered.
+
+Every sound in biaser has been chosen and tuned to feel soft, dreamlike, a little melancholic and spacious, unhurried, with nothing sharp or jarring. Sometimes it will be just something playing in the background. Sometimes it will be exactly the sound you needed right then, in that minute, in that mood. biaser never tries to guess in advance which one it will be. It's just sound and chance. But sometimes chance lands on a moment, and stops being just chance.
+
+Every moment of our lives happens once and never comes back, no matter how much we want it to. biaser is, clumsily but sincerely, trying to put music and the listener on equal footing. The sound here isn't a recorded track: it lives its own moment once too, and it couldn't repeat it even if it wanted to. If it had a will of its own, the algorithm still wouldn't let it, the same way we still can't get back a moment we've already lived.
+
+
+how it works
+
+What follows partly breaks the magic. If you'd rather not know how the trick works, you can stop here and just listen. If you're curious, here's what's inside.
+
+biaser has five moods, each tied to a color: red, orange, yellow, green, blue. Each color has several pre built sound variants assigned to it, 16 in total across all moods. When you pick a mood, one of these variants is chosen at random.
+
+Each variant is made of 22 audio layers playing at once, something like 22 separate records spinning on a turntable at the same time, each at its own speed. Every layer has three possible loop lengths (18 to 50 seconds), and one of the three is picked at random when the app loads. The numbers themselves were chosen to be deliberately "ugly," with no round values or shared multiples, so the layers take as long as possible to fall back into the same combination. On top of that, every layer starts not from the beginning of its loop but from a random point inside it, so even the same set of layers sounds different from the very first second each time.
+
+Musically, each layer belongs to one of four loosely defined "instruments": drone (a sustained background hum), pad (soft, held chords), piano, and voice. Each instrument has 3 to 5 prepared sound sets, and one is chosen at random when it starts.
+
+Altogether this adds up to an enormous number of possible combinations, large enough that hearing the exact same thing twice is practically impossible. Nothing is saved anywhere: close the app, and the session is gone for good.
+
+While the music plays, the screen shows the progress of each of the 22 layers: thin bars filling up at their own pace. Below each one is a single control: a button for changing the loop length. It has three states, drawn like a counting rhyme made of dots: a dot inside a circle (the shortest option), a dash, like two dots merged together (the medium one), and a triangle, like three dots (the longest).
+
+There's nothing else to control. That's the point too.
