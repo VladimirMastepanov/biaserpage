@@ -50,12 +50,20 @@ header {
 }
 
 .eyebrow {
-  display: block;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Центрирует всю строку (так как заголовок по центру) */
+  gap: 10px;               /* Отступ между картинкой и текстом */
+  font-size: 18px;         /* Твой обновленный шрифт */
   letter-spacing: 3px;
   color: var(--ink-soft);
-  text-transform: lowercase;
+  text-transform: uppercase;
   margin-bottom: 18px;
+}
+
+.eyebrow-icon {
+  height: 18px;            /* Подгоняет высоту картинки под размер шрифта (18px) */
+  width: auto;             /* Сохраняет пропорции изображения */
 }
 
 h1 {
