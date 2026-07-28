@@ -54,7 +54,7 @@ header {
   font-size: 12px;
   letter-spacing: 3px;
   color: var(--ink-soft);
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin-bottom: 18px;
 }
 
