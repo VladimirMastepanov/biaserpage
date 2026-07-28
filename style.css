@@ -51,7 +51,7 @@ header {
 
 .eyebrow {
   display: block;
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 3px;
   color: var(--ink-soft);
   text-transform: lowercase;
